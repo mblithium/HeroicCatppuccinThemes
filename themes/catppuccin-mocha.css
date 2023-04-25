@@ -1,0 +1,131 @@
+/* Styleguide: https://github.com/catppuccin/catppuccin/blob/main/docs/style-guide.md */
+
+/* Preview Version */
+
+body.catppuccin-mocha {
+  /* | -- Catppuccin Mocha design -- | */
+
+  /* Create a palette instead? */
+
+  /* Background Pane - Base */
+  --cat-bg-pane-base: #1e1e2e;
+  
+  /* Secondary Panes */
+  --cat-bg-sec-pane-crust: #11111b; /* Crust */
+  --cat-bg-sec-pane-mantle: #181825; /* Mantle */
+
+  /* Surface Elements */ 
+  --cat-bg-sur-elem-1: #45475a; /* Surface 1 */
+  --cat-bg-sur-elem-0: #313244; /* Surface 0 */
+
+  /* Overlays */
+  --cat-bg-overlay-1: #7f849c; /* Overlay 1 */
+  --cat-bg-overlay-0: #6c7086; /* Overlay 0 */
+
+  /* Typography */
+  --cat-text-body-copy: #6c7086; /* Body Copy */
+  --cat-text-main-headline: #cdd6f4; /* Main Headline */
+  --cat-text-sub-headl-lbs-sub-0: #a6adc8; /*  0 - Sub-Headlines, labels */
+  --cat-text-sub-headl-lbs-sub-1: #bac2de; /*  1 - Sub-Headlines, labels */
+  --cat-subtitle: var(--cat-bg-overlay-1);
+  --cat-links-blue: #89b4fa; /* Links, URLs - Blue */
+  --cat-sucess-green: #a6e3a1; /* Sucess - Green */
+  --cat-warnings-yellow: #f9e2af; /* Warning - Yellow*/
+  --cat-errors-red: #f38ba8; /* Error - Red */
+  --cat-tags-pills-blue: #89b4fa; /* Tags, pills - Blue */
+  --cat-select-bg: #585b70; /* Selection backgrounc - Surface 2 */
+  
+  /* Others */
+  --cat-active-border: #b4befe;
+
+
+
+  /* | -- Catppuccin Mocha design -- | */
+
+  /* Text colours */
+  --text-default: var(--cat-text-main-headline);
+  --text-secondary: var(--cat-text-body-copy);
+  --text-tertiary: var(--cat-text-sub-headl-lbs-sub-0);
+  --text-quartenary: var(--cat-text-sub-headl-lbs-sub-1);
+
+  /* Background colors, inputs, OnScreenKeyboard and Modal */
+
+  --background: var(--cat-bg-sec-pane-crust);
+  --background-darker: var(--cat-bg-sec-pane-mantle);
+  --background-lighter: var(--cat-bg-pane-base);
+  --body-background: var(--cat-bg-pane-base);
+  --input-background: var(--background-lighter);
+  --controller-hints-background: transparent;
+  --current-background: var(--body-background);
+  --modal-background: var(--background-darker);
+  --modal-backdrop: var(--background-darker-80);
+  --modal-border: var(--background);
+  --osk-background: var(--body-background);
+  --osk-button-background: var(--input-background);
+  --osk-button-border: var(--navbar-background);
+  --search-bar-background: var(--neutral-02);
+  --search-bar-border: var(--neutral-03);
+
+  /* Action Icons */
+  --action-icon: var(--neutral-05);
+  --action-icon-hover: var(--cat-links-blue);
+  --action-icon-active: var(--neutral-06);
+  --modal-backdrop: var(--eighty-percent-black);
+  --icon-disabled: var(--disabled-button);
+  --icon-disabled-overlay: var(--disabled-button-overlay);
+  --icons-background: var(--neutral-02);
+
+  /* Buttons */
+  --primary-button: var(--cat-bg-sur-elem-0);
+  --secondary-button: var(--cat-bg-sur-elem-1);
+  --button-stroke: var(--cat-active-border);
+  --secondary-button-overlay: var(--primary-hover);
+  --tertiary-button: var(--status-warning);
+  --tertiary-button-overlay: var(--status-warning-hover);
+  --success-button: var(--gradient-01);
+  --disabled-button: var(--neutral-03);
+  --disabled-button-overlay: var(--neutral-05);
+  --play-button: var(--primary-button);
+  --install-button: var(--secondary-button);
+  --cancel-button: var(--status-warning);
+  --cancel-button-overlay: var(--status-warning-hover);
+  --link-highlight: var(--cat-links-blue);
+
+  /* Text */
+  --text-default: var(--cat-text-main-headline);
+  --text-hover: var(--brand-text-02);
+
+  /* Sidebar */
+  --navbar-active: var(--text-secondary);
+  --navbar-inactive: var(--neutral-05);
+  --navbar-active-background: var(--background-darker);
+  --navbar-accent: var(--text-default);
+  --navbar-background: var(--background);
+  --divider: gray;
+
+  /* Status */
+  --success: var(--cat-sucess-green);
+  --success-hover: var(--cat-sucess-green);
+  --anticheat-denied: var(--cat-errors-red);
+  --anticheat-broken: var(--cat-warnings-yellow);
+  --anticheat-running: var(--status-default);
+  --anticheat-supported: var(--cat-sucess-green);
+  --anticheat-planned: var(--status-info);
+  --danger: var(--cat-errors-red);
+  --danger-hover: var(--cat-errors-red);
+
+  --primary: var(--brand-primary);
+  --secondary: var(--brand-secondary);
+
+  
+}
+
+/* Fix */
+.goToLibrary {
+  color: var(--cat-text-sub-headl-lbs-sub-0)
+}
+.notLoggedIn .button  {
+  color: var(--cat-text-sub-headl-lbs-sub-0);
+  background-color: var(--cat-select-bg);
+
+}
